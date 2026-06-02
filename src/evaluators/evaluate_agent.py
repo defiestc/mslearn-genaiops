@@ -101,9 +101,10 @@ def upload_dataset() -> str:
 
     try:
         data_id = project_client.datasets.upload_file(
-            name=dataset_name,
+            name=dataset_name".jsonl",
             version=dataset_version,
-            file_path=str(dataset_path),
+#            file_path=str(dataset_path),
+            file_path=str(Path(__file__).parent.parent.parent.parent/"data"),
         ).id
         print(f"\n✓ Dataset uploaded successfully")
 
