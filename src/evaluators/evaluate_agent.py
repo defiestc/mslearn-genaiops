@@ -99,6 +99,10 @@ def upload_dataset() -> str:
     print(f"\nDataset: {dataset_path.name}")
     print("Uploading...")
 
+    files = [f for f in os.listdir(Path(__file__).parent.parent.parent/"data") if os.path.isfile(os.path.join(Path(__file__).parent.parent.parent/"data", f))]
+    for file in files:
+        print(file)
+    
     try:
         data_id = project_client.datasets.upload_file(
             name=dataset_name,
