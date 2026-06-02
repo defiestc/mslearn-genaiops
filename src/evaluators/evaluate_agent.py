@@ -93,7 +93,6 @@ def upload_dataset() -> str:
     print(Path(__file__).parent)
     print(Path(__file__).parent.parent)
     print(Path(__file__).parent.parent.parent)
-    print(Path(__file__).parent.parent.parent)
     print(Path(__file__).parent.parent.parent/"data"/"trail_guide_evaluation_dataset.jsonl")
     print(dataset_path)
 
