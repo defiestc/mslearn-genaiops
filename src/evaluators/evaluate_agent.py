@@ -85,7 +85,7 @@ def upload_dataset() -> str:
     section("Step 1: Uploading evaluation dataset")
 
     dataset_path = (
-        Path(__file__).parent.parent.parent
+        Path(__file__).parent.parent.parent.parent
         / "data"
         / "trail_guide_evaluation_dataset.jsonl"
     )
