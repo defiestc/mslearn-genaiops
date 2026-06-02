@@ -89,12 +89,6 @@ def upload_dataset() -> str:
         / "data"
         / "trail_guide_evaluation_dataset.jsonl"
     )
-    print(Path(__file__)) 
-    print(Path(__file__).parent)
-    print(Path(__file__).parent.parent)
-    print(Path(__file__).parent.parent.parent)
-    print(Path(__file__).parent.parent.parent/"data"/"trail_guide_evaluation_dataset.jsonl")
-    print(dataset_path)
 
     if not dataset_path.exists():
         raise FileNotFoundError(
