@@ -104,7 +104,7 @@ def upload_dataset() -> str:
         print(file)
     
     try:
-        data_id = project_client.datasets.upload_file(
+        data_id = project_client.datasets.upload_folder(
             name=dataset_name,
             version=dataset_version,
 #            file_path=str(dataset_path),
