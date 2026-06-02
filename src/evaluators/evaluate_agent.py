@@ -103,13 +103,14 @@ def upload_dataset() -> str:
     for file in files:
         print(file)
     
-    try:
+#    try:
         data_id = project_client.datasets.upload_file(
             name=dataset_name,
             version=dataset_version,
             file_path=str(dataset_path),
         ).id
         print(f"\n✓ Dataset uploaded successfully")
+    try:
 
     except Exception as upload_error:
         # If this version was already uploaded in a previous run, reuse it.
