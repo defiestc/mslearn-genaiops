@@ -111,7 +111,7 @@ def upload_dataset() -> str:
         ).id
         print(f"\n✓ Dataset uploaded successfully")
     try:
-
+        print(f"\n")
     except Exception as upload_error:
         # If this version was already uploaded in a previous run, reuse it.
         # Foundry does not allow uploading the same name+version twice.
