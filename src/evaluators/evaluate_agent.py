@@ -108,7 +108,7 @@ def upload_dataset() -> str:
             name=dataset_name,
             version=dataset_version,
 #            file_path=str(dataset_path),
-            folder_path=str(Path(__file__).parent.parent.parent/"data"),
+            folder=str(Path(__file__).parent.parent.parent/"data"),
         ).id
         print(f"\n✓ Dataset uploaded successfully")
 
